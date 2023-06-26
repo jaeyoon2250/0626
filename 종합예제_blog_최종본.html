@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../JS/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.outer-menu-item').hover(function() {
+                $(this).find('.inner-menu').show();
+            }, function() {
+                $(this).find('.inner-menu').hide();
+            })
+        })
+    </script>
+    <link rel="stylesheet" href="css/HTML.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title">HTML5 Example Preview</h1>
+                <h2 class="master-description">한빛아카데미</h2>
+            </hgroup>
+        </header>
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title">HTML5</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">CSS3</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">JavaScript</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">HTML5 개요와 활용</h1>
+                        <p class="article-data">2023년 03월 13일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="http://placehold.it/430x280">
+                        <br>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit. Donec lacinia ipsum a sem lacinia finibus. Nulla pretium orci in odio rutrum pulvinar. Praesent interdum, magna vitae rhoncus fringilla, arcu lectus elementum dolor, id iaculis felis justo ut mauris. Duis nec velit tempor, ullamcorper arcu sit amet, laoreet libero. In hac habitasse platea dictumst. Curabitur vestibulum purus mattis nibh facilisis, vel dictum justo faucibus. Mauris in tempus justo.
+                           Sed dolor lorem, sodales sit amet orci in, pretium consequat ligula. Ut sagittis massa est, eget pretium nibh varius et. Ut euismod imperdiet dolor eget pretium. Mauris egestas lorem odio, sed bibendum lorem pretium ac. Donec tempus massa lectus, sit amet facilisis erat pretium vitae. Fusce aliquam porttitor eros, quis consectetur massa pharetra in. Nulla rutrum massa non orci porta pellentesque.
+                           Suspendisse iaculis placerat risus, sed ornare ex aliquam vel. Donec eget eros lobortis, lobortis tortor sed, faucibus elit. Cras dapibus velit mauris, vel viverra urna mollis sit amet. Suspendisse odio quam, eleifend nec luctus eu, eleifend sed metus. Mauris quis tortor facilisis, dignissim neque sit amet, lobortis lacus. Mauris in purus nec lorem tempus mattis nec non ipsum. Maecenas tortor nulla, ultrices at ipsum eget, aliquam iaculis ligula. Duis ultricies porta lorem vitae tincidunt. Integer vel augue sodales erat aliquam venenatis. Vestibulum euismod ipsum sed ante venenatis, eu elementum arcu interdum. Aliquam laoreet ut dolor ut laoreet. Donec dignissim lorem tincidunt dui efficitur placerat. Duis eu porttitor est. Nunc at pretium enim.
+                           Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin viverra dolor in leo egestas, placerat ultricies nunc vulputate. Curabitur pellentesque orci ut semper tempus. Nam sed volutpat magna. Phasellus ac velit mollis, tincidunt augue vel, pharetra velit. Donec bibendum bibendum elit sed cursus. Cras ac eros faucibus sapien dignissim mattis. Aliquam iaculis malesuada pretium.
+                           Quisque at volutpat nisl. Donec ut mollis tortor, nec lobortis tellus. Praesent lacinia, nulla ut fringilla suscipit, risus enim vehicula ex, at elementum tellus nunc non ipsum. Phasellus quis imperdiet sem, vitae vulputate purus. Vestibulum venenatis sapien sed ex eleifend volutpat. Sed eu convallis tortor. In facilisis congue nisi ut efficitur. Vestibulum porta varius sagittis. Donec dapibus molestie ligula et dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam a nisi augue. Nullam a congue dolor. Mauris sagittis mauris ac eros mattis, in rutrum turpis fringilla. Praesent sed massa vel enim molestie aliquam vel ac libero. Quisque eget condimentum leo.</p>
+                        <br>
+                        <p>Proin ut fringilla sapien.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">HTML5 응용과 실습</h1>
+                        <p class="article-data">2023년 3월 20일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="http://placehold.it/430x280">
+                        <br>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit. Donec lacinia ipsum a sem lacinia finibus. Nulla pretium orci in odio rutrum pulvinar. Praesent interdum, magna vitae rhoncus fringilla, arcu lectus elementum dolor, id iaculis felis justo ut mauris. Duis nec velit tempor, ullamcorper arcu sit amet, laoreet libero. In hac habitasse platea dictumst. Curabitur vestibulum purus mattis nibh facilisis, vel dictum justo faucibus. Mauris in tempus justo.
+                            Sed dolor lorem, sodales sit amet orci in, pretium consequat ligula. Ut sagittis massa est, eget pretium nibh varius et. Ut euismod imperdiet dolor eget pretium. Mauris egestas lorem odio, sed bibendum lorem pretium ac. Donec tempus massa lectus, sit amet facilisis erat pretium vitae. Fusce aliquam porttitor eros, quis consectetur massa pharetra in. Nulla rutrum massa non orci porta pellentesque.
+                            Suspendisse iaculis placerat risus, sed ornare ex aliquam vel. Donec eget eros lobortis, lobortis tortor sed, faucibus elit. Cras dapibus velit mauris, vel viverra urna mollis sit amet. Suspendisse odio quam, eleifend nec luctus eu, eleifend sed metus. Mauris quis tortor facilisis, dignissim neque sit amet, lobortis lacus. Mauris in purus nec lorem tempus mattis nec non ipsum. Maecenas tortor nulla, ultrices at ipsum eget, aliquam iaculis ligula. Duis ultricies porta lorem vitae tincidunt. Integer vel augue sodales erat aliquam venenatis. Vestibulum euismod ipsum sed ante venenatis, eu elementum arcu interdum. Aliquam laoreet ut dolor ut laoreet. Donec dignissim lorem tincidunt dui efficitur placerat. Duis eu porttitor est. Nunc at pretium enim.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin viverra dolor in leo egestas, placerat ultricies nunc vulputate. Curabitur pellentesque orci ut semper tempus. Nam sed volutpat magna. Phasellus ac velit mollis, tincidunt augue vel, pharetra velit. Donec bibendum bibendum elit sed cursus. Cras ac eros faucibus sapien dignissim mattis. Aliquam iaculis malesuada pretium.
+                            Quisque at volutpat nisl. Donec ut mollis tortor, nec lobortis tellus. Praesent lacinia, nulla ut fringilla suscipit, risus enim vehicula ex, at elementum tellus nunc non ipsum. Phasellus quis imperdiet sem, vitae vulputate purus. Vestibulum venenatis sapien sed ex eleifend volutpat. Sed eu convallis tortor. In facilisis congue nisi ut efficitur. Vestibulum porta varius sagittis. Donec dapibus molestie ligula et dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam a nisi augue. Nullam a congue dolor. Mauris sagittis mauris ac eros mattis, in rutrum turpis fringilla. Praesent sed massa vel enim molestie aliquam vel ac libero. Quisque eget condimentum leo.</p>
+                        <br>
+                        <p>Proin ut fringilla sapien.</p>
+                    </div>
+                </article>
+            </section>
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>카테고리</h3>
+                    <ul>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                    </ul>
+                </div>
+                <div class="aside-list">
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                </div>
+            </aside>
+        </div>
+        <footer id="main-footer">
+            <a href="#">ITCookBook HTML5 Programming</a>
+        </footer>
+    </div>
+</body>
+</html>
